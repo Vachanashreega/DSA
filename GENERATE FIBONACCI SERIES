@@ -1,0 +1,30 @@
+#include<stdio.h>
+int main()
+{
+    int n,prev=0,sum=1,next;
+    int I;
+    printf("Enter the number of elements required in series:”);
+    scanf("%d",&n);
+    if(n==1)
+    {
+        printf("0\n");
+    }
+    else if(n>1)
+    {
+        printf("%d\t",prev);
+        printf("%d\t",sum);
+        for(i=2;i<n;i++)
+        {
+            next=prev+sum;
+            printf("%d\t",next);
+            prev=sum;
+            sum=next;
+        }
+    }
+    else
+    {
+        printf("Invalid Input\n");
+    }
+    return 0;
+} 
+
