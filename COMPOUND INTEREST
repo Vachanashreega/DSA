@@ -1,0 +1,12 @@
+#include<stdio.h> 
+int main() 
+{ 
+    float P,T,R; 
+    float CI;
+    printf("Enter the values of P,T,R:\n");
+    scanf("%f%f%f",&P,&T,&R);
+    CI= P * pow((1+R/100),T);
+    printf("Compound Interest = %f\n", CI);
+    return 0; 
+} 
+
